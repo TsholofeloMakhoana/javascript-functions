@@ -1,3 +1,5 @@
+
+
 const { assert } = require('chai');
 const cheerio = require('cheerio');
 const dot = require('dot-object');
@@ -5,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const jscs = require('jscodeshift');
 const esprima = require('esprima');
+
 
 const source = fs.readFileSync(path.join(process.cwd(), 'js/gameoflife.js'), 'utf8');
 const ast = jscs(source);
